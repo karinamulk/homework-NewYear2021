@@ -3,8 +3,48 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <style media="screen">
+    /* p,
+label {
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+  margin: .4rem;
+} */
+    div {
+      height: 500px;
+    }
+     #box1 {
+       background: blue;
+       width: 30%;
+       height: 20%;
+       animation: color 4s linear infinite;
+     }
+     @keyframes color {
+       25% {background: red;}
+       50% {background: yellow;}
+       75% {background: orange;}
+     }
+     label {width: 10%;
+     height: 100px;
+     background: black;
+      margin-left: 5%;}
+
+    </style>
   </head>
   <body>
-    <img src="images/mask1.svg" alt="">
+  <div >
+    <input type="radio" name="box"  id="box1" checked>
+    <label for="box">stop</label>
+  </div>
+
+<div>
+  <input type="checkbox" id="scales" name="scales"
+         checked>
+  <label for="scales">Scales</label>
+</div>
+
+
   </body>
 </html>
