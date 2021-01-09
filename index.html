@@ -4,23 +4,120 @@
     <meta charset="utf-8">
     <title></title>
     <style media="screen">
+      /* html, body, .container {height: 100%; width: 100%; margin: 0;} */
+      /* .container {height: 900px; width: 100%; margin: 0;} */
+      body {
+        background: black;
+      }
       .pic {
         mask-type: alpha;
-        width: 1440px;
-        height: 1103px;
-        mask: url("https://karinamulk.github.io/homework-NewYear2021/images/mask1.svg");
-        background-color: yellow;
+        width: 301px;
+        height: 260px;
+        -webkit-mask: url("https://karinamulk.github.io/homework-NewYear2021/images/mask1.svg");
+        background-color: white;
+        position: absolute;
+        left: calc(50% - 98px);
+        top: calc(20%);
+        transition: all .5s;
       }
-      /* .mask {width: 100%;} */
+      .first {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        border-radius: 50%;
+        bottom: 10%;
 
 
+      }
+      #a {
+        background: #9C2A18;
+        left: 10%;
+      }
+      #b {
+        background: #A94525;
+        left: 20.33%;
 
+      }
+      #c {
+        background: #EA723D;
+        left: 30.66%;
 
+      }
+      #d {
+        background: #EAA43A;
+        left: 40.99%;
 
+      }
+      #e {
+        background: #F2CA45;
+        left: 51.33%;
+      }
+      #f {
+        background: #F9EF4F;
+        left: 61.66%;
+
+      }
+      #g {
+        background: #BDC43F;
+        left: 71.99%;
+      }
+      #i {
+        background: #9F9730;
+        left: 82%;
+      }
+
+      #a:hover ~ .pic{
+        background-color: #9C2A18;
+        transition: all .2s;
+      }
+      #b:hover ~ .pic{
+        background-color: #A94525;
+        transition: all .2s;
+
+      }
+      #c:hover ~ .pic{
+        background-color: #EA723D;
+        transition: all .2s;
+
+      }
+      #d:hover ~ .pic{
+        background-color: #EAA43A;
+        transition: all .2s;
+
+      }
+      #e:hover ~ .pic{
+        background-color: #F2CA45;
+        transition: all .2s;
+
+      }
+      #f:hover ~ .pic{
+        background-color: #F9EF4F;
+        transition: all .2s;
+
+      }
+      #g:hover ~ .pic{
+        background-color:  #BDC43F;
+        transition: all .2s;
+
+      }
+      #i:hover ~ .pic{
+        background-color: #9F9730;
+        transition: all .2s;
+
+      }
     </style>
   </head>
   <body>
-    <div class="pic"></div>
-   <img src="images/mask1.svg" alt="" class="mask">
+      <div class="container">
+        <div class="first" id="a"></div>
+        <div class="first" id="b"></div>
+        <div class="first" id="c"></div>
+        <div class="first" id="d"></div>
+        <div class="first" id="e"></div>
+        <div class="first" id="f"></div>
+        <div class="first" id="g"></div>
+        <div class="first" id="i"></div>
+        <div class="pic"></div>
+      </div>
   </body>
 </html>
